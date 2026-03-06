@@ -31,6 +31,8 @@
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
       <a href="#team">Team</a>
       <a href="#involved">Contact</a>
     </div>
@@ -92,6 +94,33 @@
       </div>
     </section>
 
+    <!-- Open Source Projects -->
+    <section id="projects" class="card span-12">
+      <span class="card-label">Open Source</span>
+      <h2 class="card-title">Our Libraries</h2>
+      <div class="project-grid">
+        <a href="https://github.com/helix-agh/lonpy" target="_blank" rel="noopener" class="project-card">
+          <div class="project-info">
+            <h3>lonpy</h3>
+            <p>A Python library for constructing, analyzing, and visualizing Local Optima Networks for continuous
+              optimization problems. LONs provide a powerful way to understand the structure of fitness landscapes,
+              revealing how local optima are connected and how difficult it may be to find global optima.</p>
+            <span class="project-link">github.com/helix-agh/lonpy</span>
+          </div>
+        </a>
+        <a href="https://github.com/helix-agh/pyhms" target="_blank" rel="noopener" class="project-card">
+          <div class="project-info">
+            <h3>pyHMS</h3>
+            <p>A Python implementation of Hierarchic Memetic Strategy: a population-based metaheuristic that
+              organizes search processes into a tree-like hierarchy, enabling adaptive exploration at multiple
+              resolution
+              levels.</p>
+            <span class="project-link">github.com/helix-agh/pyhms</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
     <!-- Team -->
     <section id="team" class="card span-6">
       <span class="card-label">Personnel</span>
@@ -106,8 +135,16 @@
           <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-muted);">PhD Student</div>
         </div>
         <div style="padding: 1rem; border-left: 2px solid var(--accent); background: rgba(255,255,255,0.02);">
+          <div style="font-weight: 700;">Bartłomiej Walczak</div>
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-muted);">Master Student</div>
+        </div>
+        <div style="padding: 1rem; border-left: 2px solid var(--accent-2); background: rgba(255,255,255,0.02);">
           <div style="font-weight: 700;">Wojciech Achtelik</div>
           <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-muted);">PhD Student</div>
+        </div>
+        <div style="padding: 1rem; border-left: 2px solid var(--accent); background: rgba(255,255,255,0.02);">
+          <div style="font-weight: 700;">Władysław Nieć</div>
+          <div style="font-family: var(--font-mono); font-size: 0.7rem; color: var(--ink-muted);">Master Student</div>
         </div>
       </div>
     </section>
@@ -132,10 +169,21 @@
       </div>
     </section>
 
+    <!-- Publications -->
+    <section id="publications" class="card span-12">
+      <span class="card-label">Publications</span>
+      <h2 class="card-title">Our Research Output</h2>
+      <p style="font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 1.5rem;">Browse our full list of publications on AGH's BaDAP repository.</p>
+      <a href="https://badap.agh.edu.pl/autorzy/zespoly/helix-00552?limit=20&language=en" target="_blank" rel="noopener"
+        style="color: var(--accent); font-family: var(--font-mono); text-decoration: none; border: 1px solid var(--accent); padding: 0.5rem 1rem;">
+        VIEW PUBLICATIONS ON BADAP
+      </a>
+    </section>
+
     <!-- Involvement -->
     <section id="involved" class="card span-12">
       <span class="card-label">Collaboration</span>
-      <div style="display: flex; gap: 4rem; align-items: flex-start;">
+      <div class="collab-layout">
         <div style="flex: 1;">
           <h2 class="card-title">Open for Collaborative Research</h2>
           <p>We welcome collaboration with academic and industry researchers interested in rigorous algorithmic
@@ -148,12 +196,12 @@
             </a>
           </div>
         </div>
-        <div style="width: 300px; padding: 1.5rem; background: var(--accent-dim); border: 1px solid var(--accent);">
+        <div class="collab-partners">
           <div style="font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 1rem; color: var(--accent);">//
             PARTNER_NODES</div>
           <ul style="list-style: none; padding: 0; font-size: 0.8rem; color: var(--ink);">
-            <li style="margin-bottom: 0.5rem;">• Univerzita Tomáše Bati, Zlín</li>
-            <li>• České vysoké učení technické, Prague</li>
+            <li style="margin-bottom: 0.5rem;">• Tomas Bata University, Zlín</li>
+            <li>• Czech Technical University, Prague</li>
           </ul>
         </div>
       </div>

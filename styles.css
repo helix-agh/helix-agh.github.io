@@ -296,6 +296,76 @@ body {
   line-height: 1.5;
 }
 
+/* Project Cards */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+.project-card {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid var(--panel-border);
+  background: rgba(255, 255, 255, 0.02);
+  text-decoration: none;
+  color: inherit;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.project-card:hover {
+  background: var(--panel-hover);
+  border-color: var(--accent);
+}
+
+.project-info h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--ink);
+}
+
+.project-info p {
+  font-size: 0.85rem;
+  color: var(--ink-soft);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+.project-link {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.05em;
+}
+
+/* Collaboration Layout */
+.collab-layout {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.collab-partners {
+  width: 300px;
+  flex-shrink: 0;
+  padding: 1.5rem;
+  background: var(--accent-dim);
+  border: 1px solid var(--accent);
+}
+
+@media (max-width: 768px) {
+  .project-grid { grid-template-columns: 1fr; }
+  .collab-layout {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .collab-partners {
+    width: 100%;
+  }
+}
+
 /* Footer */
 footer {
   width: min(1200px, 94vw);
