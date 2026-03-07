@@ -10,6 +10,12 @@
   --accent: #38bdf8; /* Sophisticated Science Blue */
   --accent-2: #818cf8;
   --accent-dim: rgba(56, 189, 248, 0.15);
+  --role-professor: #a78bfa;
+  --role-phd: #38bdf8;
+  --role-master: #2dd4bf;
+  --role-professor-dim: rgba(167, 139, 250, 0.14);
+  --role-phd-dim: rgba(56, 189, 248, 0.14);
+  --role-master-dim: rgba(45, 212, 191, 0.14);
   --font-sans: "Space Grotesk", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
   --glass: blur(16px);
@@ -338,6 +344,57 @@ body {
   font-size: 0.7rem;
   color: var(--accent);
   letter-spacing: 0.05em;
+}
+
+/* Team */
+.team-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.team-member {
+  padding: 1rem;
+  border-left: 2px solid var(--panel-border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.team-name {
+  font-weight: 700;
+}
+
+.team-role {
+  margin-top: 0.25rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.role-professor {
+  border-left-color: var(--role-professor);
+  background: linear-gradient(90deg, var(--role-professor-dim), rgba(255, 255, 255, 0.02) 40%);
+}
+
+.role-professor .team-role {
+  color: var(--role-professor);
+}
+
+.role-phd {
+  border-left-color: var(--role-phd);
+  background: linear-gradient(90deg, var(--role-phd-dim), rgba(255, 255, 255, 0.02) 40%);
+}
+
+.role-phd .team-role {
+  color: var(--role-phd);
+}
+
+.role-master {
+  border-left-color: var(--role-master);
+  background: linear-gradient(90deg, var(--role-master-dim), rgba(255, 255, 255, 0.02) 40%);
+}
+
+.role-master .team-role {
+  color: var(--role-master);
 }
 
 /* Collaboration Layout */
