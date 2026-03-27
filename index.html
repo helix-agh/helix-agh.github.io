@@ -152,6 +152,7 @@
       <a href="#about">About</a>
       <a href="#research">Research</a>
       <a href="#projects">Projects</a>
+      <a href="#announcements">News</a>
       <a href="#publications">Publications</a>
       <a href="#team">Team</a>
       <a href="#involved">Contact</a>
@@ -238,6 +239,17 @@
             <span class="project-link">github.com/helix-agh/pyhms</span>
           </div>
         </a>
+      </div>
+    </section>
+
+    <!-- Announcements -->
+    <section id="announcements" class="card span-12">
+      <span class="card-label">Announcements</span>
+      <h2 class="card-title">Latest News</h2>
+      <div class="announcements-list" id="announcements-list">
+        <noscript>
+          <p style="color: var(--ink-soft); font-size: 0.9rem;">Enable JavaScript to view announcements.</p>
+        </noscript>
       </div>
     </section>
 
@@ -328,6 +340,31 @@
       </div>
     </section>
   </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    (async function () {
+      const list = document.getElementById('announcements-list');
+      try {
+        const res = await fetch('announcements/index.json');
+        const posts = await res.json();
+        for (const post of posts) {
+          const md = await (await fetch('announcements/' + post.file)).text();
+          const article = document.createElement('article');
+          article.className = 'announcement';
+          article.innerHTML =
+            '<div class="announcement-header">' +
+            '<h3 class="announcement-title">' + post.title + '</h3>' +
+            '<time class="announcement-date">' + post.date + '</time>' +
+            '</div>' +
+            '<div class="announcement-body">' + marked.parse(md) + '</div>';
+          list.appendChild(article);
+        }
+      } catch (e) {
+        list.innerHTML = '<p style="color:var(--ink-muted);font-size:0.9rem;">Could not load announcements.</p>';
+      }
+    })();
+  </script>
 
   <footer>
     <div>&copy; 2026 HELIX RESEARCH LAB // AGH KRAKOW</div>
