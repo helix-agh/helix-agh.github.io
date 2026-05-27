@@ -1,5 +1,15 @@
 [
   {
+    "title": "Preprint: Automatic Design of Optimization Test Problems with LLMs",
+    "date": "2026-05-27",
+    "file": "2026-05-27-eotf-preprint.md"
+  },
+  {
+    "title": "Paper accepted at GECCO 2026",
+    "date": "2026-05-27",
+    "file": "2026-05-27-gecco-2026-gnn-paper.md"
+  },
+  {
     "title": "lonkit released on PyPI",
     "date": "2026-03-27",
     "file": "2026-03-27-lonkit-pypi.md"
