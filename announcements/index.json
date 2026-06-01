@@ -1,5 +1,10 @@
 [
   {
+    "title": "Paper accepted at PPSN 2026",
+    "date": "2026-06-01",
+    "file": "2026-06-01-ppsn-2026-exp-das.md"
+  },
+  {
     "title": "Preprint: Automatic Design of Optimization Test Problems with LLMs",
     "date": "2026-05-27",
     "file": "2026-05-27-eotf-preprint.md"
