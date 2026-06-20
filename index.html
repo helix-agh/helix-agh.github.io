@@ -11,7 +11,7 @@
     content="evolutionary computation, metaheuristics, global optimization, fitness landscape analysis, surrogate-assisted optimization, machine learning, AGH University, Krakow, research group, computational intelligence">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://helix-agh.github.io/">
-  <link rel="icon" type="image/png" href="assets/helix_logo.png">
+  <link rel="icon" type="image/png" href="assets/agh-tile.png">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="HELIX Research Group">
@@ -19,21 +19,19 @@
   <meta property="og:description"
     content="HELIX Research Group at AGH University of Krakow, Poland — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.">
   <meta property="og:url" content="https://helix-agh.github.io/">
-  <meta property="og:image" content="https://helix-agh.github.io/assets/helix_og.png">
+  <meta property="og:image" content="https://helix-agh.github.io/assets/og.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="HELIX Research Group logo">
+  <meta property="og:image:alt" content="HELIX Research Group — AGH University of Krakow">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="HELIX Research Group | AGH University of Krakow">
   <meta name="twitter:description"
     content="HELIX Research Group at AGH University of Krakow, Poland — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.">
-  <meta name="twitter:image" content="https://helix-agh.github.io/assets/helix_og.png">
-  <meta name="twitter:image:alt" content="HELIX Research Group logo">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
-    rel="stylesheet">
+  <meta name="twitter:image" content="https://helix-agh.github.io/assets/og.png">
+  <meta name="twitter:image:alt" content="HELIX Research Group — AGH University of Krakow">
+  <link rel="preload" href="assets/fonts/SpaceGrotesk-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/SpaceGrotesk-400-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script type="application/ld+json">
     {
@@ -66,9 +64,9 @@
           "url": "https://helix-agh.github.io/",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://helix-agh.github.io/assets/helix_logo.png"
+            "url": "https://helix-agh.github.io/assets/agh-tile.png"
           },
-          "image": "https://helix-agh.github.io/assets/helix_og.png",
+          "image": "https://helix-agh.github.io/assets/og.png",
           "description": "HELIX Research Group at AGH University of Krakow — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.",
           "email": "wachtelik@agh.edu.pl",
           "location": {
@@ -145,13 +143,17 @@
 </head>
 
 <body>
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-mark">HELIX&nbsp;<span class="spark">&#10022;</span></div>
+  </div>
+
   <div class="bg-overlay" aria-hidden="true"></div>
   <div class="glow-orb glow-1"></div>
   <div class="glow-orb glow-2"></div>
 
   <nav class="topbar">
-    <a href="#" class="brand">
-      <img src="assets/helix_logo.png" alt="HELIX logo">
+    <a href="/" class="brand">
+      <img src="assets/agh.svg" alt="AGH University of Krakow logo" width="80" height="80">
       <div class="brand-text">
         <p class="brand-kicker">AGH University of Krakow</p>
         <h1 class="brand-name">HELIX Lab</h1>
@@ -164,18 +166,26 @@
       <a href="#announcements">News</a>
       <a href="#publications">Publications</a>
       <a href="#team">Team</a>
-      <a href="#involved">Contact</a>
+      <a href="#involved" class="nav-cta">Collaborate</a>
     </div>
   </nav>
 
   <header class="hero">
-    <div class="technical-line"></div>
-    <h2 class="hero-title">Heuristics, Evolution and Learning for Intelligent eXploration</h2>
+    <canvas class="hero-canvas" aria-hidden="true"></canvas>
+    <div class="hero-inner">
+      <div class="technical-line"></div>
+      <div class="hero-metadata">
+        <span>Kraków, PL</span>
+        <span>Evolutionary Computation</span>
+        <span>Machine Learning</span>
+      </div>
+      <h2 class="hero-title">Heuristics, Evolution and Learning for Intelligent eXploration</h2>
+    </div>
   </header>
 
   <main class="bento-grid">
     <!-- Lab Overview -->
-    <section id="about" class="card span-8">
+    <section id="about" class="card span-8" data-reveal>
       <span class="card-label">Group Overview</span>
       <h2 class="card-title">Learning for Evolutionary Computation</h2>
       <div class="card-content">
@@ -186,7 +196,7 @@
     </section>
 
     <!-- Context Info -->
-    <section class="card span-4">
+    <section class="card span-4" data-reveal>
       <span class="card-label">System Context</span>
       <h2 class="card-title">Leading Unit</h2>
       <div class="card-content">
@@ -201,8 +211,28 @@
       </div>
     </section>
 
+    <!-- Stat Strip -->
+    <section class="card span-12 stats-band" data-reveal>
+      <div class="stat-cell">
+        <div class="stat-num"><span data-count="6">6</span></div>
+        <div class="stat-label">Researchers</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num"><span data-count="3">3</span></div>
+        <div class="stat-label">Open-source libraries</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num"><span data-count="2">2</span></div>
+        <div class="stat-label">Active grants</div>
+      </div>
+      <div class="stat-cell">
+        <div class="stat-num"><span data-count="2">2</span></div>
+        <div class="stat-label">Partner institutions</div>
+      </div>
+    </section>
+
     <!-- Research Tracks -->
-    <section id="research" class="card span-12">
+    <section id="research" class="card span-12" data-reveal>
       <span class="card-label">Active Research Tracks</span>
       <div class="area-grid">
         <div class="area-item">
@@ -224,8 +254,14 @@
       </div>
     </section>
 
+    <!-- Statement -->
+    <section class="span-12 statement-band" data-reveal>
+      <span class="spark" aria-hidden="true">&#10022;</span>
+      <p>We study what makes optimization hard, and turn that structure into algorithms that find better solutions.</p>
+    </section>
+
     <!-- Open Source Projects -->
-    <section id="projects" class="card span-12">
+    <section id="projects" class="card span-12" data-reveal>
       <span class="card-label">Open Source</span>
       <h2 class="card-title">Our Libraries</h2>
       <div class="project-grid">
@@ -265,8 +301,30 @@
       </div>
     </section>
 
+    <!-- Research themes ticker -->
+    <section class="span-12 ticker" data-reveal aria-hidden="true">
+      <div class="ticker-track">
+        <span>Evolutionary Computation</span><span class="spark">&#10022;</span>
+        <span>Metaheuristics</span><span class="spark">&#10022;</span>
+        <span>Fitness Landscape Analysis</span><span class="spark">&#10022;</span>
+        <span>Local Optima Networks</span><span class="spark">&#10022;</span>
+        <span>Surrogate Models</span><span class="spark">&#10022;</span>
+        <span>Hierarchic Memetic Strategy</span><span class="spark">&#10022;</span>
+        <span>Global Optimization</span><span class="spark">&#10022;</span>
+        <span>Predictive Control</span><span class="spark">&#10022;</span>
+        <span>Evolutionary Computation</span><span class="spark">&#10022;</span>
+        <span>Metaheuristics</span><span class="spark">&#10022;</span>
+        <span>Fitness Landscape Analysis</span><span class="spark">&#10022;</span>
+        <span>Local Optima Networks</span><span class="spark">&#10022;</span>
+        <span>Surrogate Models</span><span class="spark">&#10022;</span>
+        <span>Hierarchic Memetic Strategy</span><span class="spark">&#10022;</span>
+        <span>Global Optimization</span><span class="spark">&#10022;</span>
+        <span>Predictive Control</span><span class="spark">&#10022;</span>
+      </div>
+    </section>
+
     <!-- Announcements -->
-    <section id="announcements" class="card span-12">
+    <section id="announcements" class="card span-12" data-reveal>
       <span class="card-label">Announcements</span>
       <h2 class="card-title">Latest News</h2>
       <div class="announcements-list" id="announcements-list">
@@ -277,7 +335,7 @@
     </section>
 
     <!-- Team -->
-    <section id="team" class="card span-6">
+    <section id="team" class="card span-6" data-reveal>
       <span class="card-label">Personnel</span>
       <h2 class="card-title">Team</h2>
       <div class="team-list">
@@ -309,7 +367,7 @@
     </section>
 
     <!-- Grants -->
-    <section class="card span-6">
+    <section class="card span-6" data-reveal>
       <span class="card-label">Active Grants</span>
       <h2 class="card-title">Projects</h2>
       <div style="font-size: 0.9rem; color: var(--ink-soft);">
@@ -328,8 +386,14 @@
       </div>
     </section>
 
+    <!-- Statement -->
+    <section class="span-12 statement-band" data-reveal>
+      <span class="spark" aria-hidden="true">&#10022;</span>
+      <p>Rigorous evaluation. Reproducible benchmarks. Open tools.</p>
+    </section>
+
     <!-- Publications -->
-    <section id="publications" class="card span-12">
+    <section id="publications" class="card span-12" data-reveal>
       <span class="card-label">Publications</span>
       <h2 class="card-title">Our Research Output</h2>
       <p style="font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 1.5rem;">Browse our full list of publications
@@ -341,7 +405,7 @@
     </section>
 
     <!-- Involvement -->
-    <section id="involved" class="card span-12">
+    <section id="involved" class="card span-12" data-reveal>
       <span class="card-label">Collaboration</span>
       <div class="collab-layout">
         <div style="flex: 1;">
@@ -368,8 +432,28 @@
     </section>
   </main>
 
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   <script>
+    // Minimal markdown -> HTML (bold, links, inline + fenced code, paragraphs).
+    // Replaces the marked CDN dependency: no third-party, no render-blocking request.
+    function mdToHtml(md) {
+      const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      const codes = [];
+      md = md.replace(/```[\w-]*\n([\s\S]*?)```/g, (_, c) => {
+        codes.push('<pre><code>' + esc(c.replace(/\n$/, '')) + '</code></pre>');
+        return '@@CB' + (codes.length - 1) + '@@';
+      });
+      const inline = (t) => esc(t)
+        .replace(/`([^`]+)`/g, (_, c) => '<code>' + c + '</code>')
+        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
+        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+      return md.split(/\n{2,}/).map((b) => {
+        b = b.trim();
+        if (!b) return '';
+        if (/^@@CB\d+@@$/.test(b)) return codes[+b.replace(/[^\d]/g, '')];
+        return '<p>' + inline(b).replace(/\n/g, ' ') + '</p>';
+      }).join('').replace(/@@CB(\d+)@@/g, (_, i) => codes[+i]);
+    }
+
     (async function () {
       const list = document.getElementById('announcements-list');
       try {
@@ -384,7 +468,7 @@
             '<h3 class="announcement-title">' + post.title + '</h3>' +
             '<time class="announcement-date">' + post.date + '</time>' +
             '</div>' +
-            '<div class="announcement-body">' + marked.parse(md) + '</div>';
+            '<div class="announcement-body">' + mdToHtml(md) + '</div>';
           list.appendChild(article);
         }
       } catch (e) {
@@ -396,6 +480,8 @@
   <footer>
     <div>&copy; 2026 HELIX RESEARCH LAB // AGH KRAKOW</div>
   </footer>
+
+  <script src="main.js" defer></script>
 </body>
 
 </html>
