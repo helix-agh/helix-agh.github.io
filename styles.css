@@ -418,6 +418,12 @@ body {
   border-color: var(--accent);
 }
 
+.project-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 .project-info h3 {
   font-size: 1.1rem;
   font-weight: 700;
@@ -433,6 +439,7 @@ body {
 }
 
 .project-link {
+  margin-top: auto;
   font-family: var(--font-mono);
   font-size: 0.7rem;
   color: var(--accent);
