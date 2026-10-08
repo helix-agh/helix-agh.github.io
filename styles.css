@@ -236,7 +236,7 @@ body {
 /* Hero - Data-dense and serious */
 .hero {
   width: min(1200px, 94vw);
-  margin: 8rem auto 6rem;
+  margin: 4rem auto 3rem;
 }
 
 .hero-metadata {
@@ -263,7 +263,7 @@ body {
   font-weight: 700;
   line-height: 1.05;
   letter-spacing: -0.04em;
-  margin-bottom: 2rem;
+  margin: 0;
   max-width: 22ch;
 }
 
@@ -708,9 +708,6 @@ footer {
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
-  min-height: 58vh;
-  display: flex;
-  align-items: center;
 }
 
 .hero-inner {
