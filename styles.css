@@ -802,47 +802,6 @@ footer {
   color: var(--ink);
 }
 
-/* ---------- Research themes ticker ---------- */
-.ticker {
-  background: var(--bg);
-  padding: 1.5rem 0;
-  overflow: hidden;
-  -webkit-mask-image: linear-gradient(90deg, transparent, black 12%, black 88%, transparent);
-  mask-image: linear-gradient(90deg, transparent, black 12%, black 88%, transparent);
-}
-
-.ticker::before { display: none; }
-
-.ticker-track {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  width: max-content;
-  animation: tickerScroll 64s linear infinite;
-}
-
-.ticker-track span {
-  font-family: var(--font-mono);
-  font-size: 0.85rem;
-  letter-spacing: 0.04em;
-  color: var(--ink-soft);
-  white-space: nowrap;
-}
-
-.ticker-track .spark {
-  font-size: 0.7rem;
-  color: var(--ink-muted);
-}
-
-.ticker:hover .ticker-track {
-  animation-play-state: paused;
-}
-
-@keyframes tickerScroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
-}
-
 /* ---------- Scroll reveal ---------- */
 [data-reveal] {
   opacity: 0;
@@ -870,7 +829,6 @@ footer {
   html { scroll-behavior: auto; }
   .preloader { display: none; }
   .technical-line { animation: none; width: 100%; }
-  .ticker-track { animation: none; }
   [data-reveal] { opacity: 1; transform: none; transition: none; }
   .project-card:hover, .team-member:hover { transform: none; }
 }
