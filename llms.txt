@@ -1,0 +1,41 @@
+# HELIX Research Group
+
+> HELIX (Heuristics, Evolution and Learning for Intelligent eXploration) is a research group at the Faculty of Computer Science, AGH University of Krakow, Poland. It works at the intersection of evolutionary computation and machine learning, developing methods for high-dimensional global optimization problems where conventional methods fail.
+
+Research areas: evolutionary computation (population-based search dynamics, metaheuristic design), fitness landscape analysis (Exploratory Landscape Analysis, Local Optima Networks), machine learning for optimization (surrogate-assisted optimization, data-driven modeling), and optimization of predictive control problems.
+
+Contact: wachtelik@agh.edu.pl
+Partner institutions: Tomas Bata University (Zlín), Czech Technical University (Prague).
+
+## Pages
+
+- [Home](https://helix-agh.github.io/): research areas, software, news, grants, team, contact
+- [OPUS 25 project](https://helix-agh.github.io/opus25.html): NCN grant UMO-2023/49/B/ST6/01404, domain-agnostic synergetic combinations of global optimization metaheuristics
+- [Publications (BaDAP)](https://badap.agh.edu.pl/autorzy/zespoly/helix-00552?limit=20&language=en): full publication list in AGH's repository
+
+## Open-source software
+
+- [lonkit](https://github.com/helix-agh/lonkit): Python library for constructing, analyzing, and visualizing Local Optima Networks; on PyPI as `lonkit`; docs at https://helix-agh.github.io/lonkit
+- [orivex](https://github.com/helix-agh/orivex): fast Python engine for Exploratory Landscape Analysis (ELA) features, with an optional differentiable PyTorch backend
+- [clandscape](https://github.com/helix-agh/clandscape): constrained landscape features and benchmarks for constrained continuous optimization
+- [pyHMS](https://github.com/helix-agh/pyhms): Python implementation of the Hierarchic Memetic Strategy metaheuristic
+
+## Recent publications
+
+- "Automatic Design of Optimization Test Problems with Large Language Models", IEEE Transactions on Evolutionary Computation, 2026. [IEEE Xplore](https://ieeexplore.ieee.org/document/11719708/), [arXiv](https://arxiv.org/abs/2602.02724), [code](https://github.com/helix-agh/ela-guided-llm-bench). Introduces Evolution of Test Functions (EoTF).
+- "RL-Exponential-DAS: Exponential Decision Schedules for Dynamic Algorithm Selection", PPSN 2026. [Springer](https://link.springer.com/chapter/10.1007/978-3-032-36217-9_10)
+- "Analyzing search behavior of population-based optimization algorithms using graph neural networks", GECCO 2026. [ACM DL](https://dl.acm.org/doi/10.1145/3795095.3805195)
+
+## Funded projects
+
+- OPUS 25 (NCN), UMO-2023/49/B/ST6/01404: Domain-agnostic synergetic combinations of global optimization metaheuristics
+- OPUS 28 LAP (NCN), UMO-2024/55/I/ST7/02912: Optimizing Robust Delayed Feedback and Predictive Control Problems via Advanced Metaheuristics
+
+## Team
+
+- Maciej Smołka, Professor
+- Hubert Guzowski, PhD Student
+- Wojciech Achtelik, PhD Student
+- Bartłomiej Walczak, Master Student
+- Władysław Nieć, Master Student
+- Jerzy Boksa, Master Student
