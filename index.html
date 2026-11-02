@@ -1,23 +1,24 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HELIX Research Group | AGH University of Krakow</title>
-  <meta name="description"
-    content="HELIX Research Group at AGH University of Krakow, Poland — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.">
-  <meta name="keywords"
-    content="evolutionary computation, metaheuristics, global optimization, fitness landscape analysis, surrogate-assisted optimization, machine learning, AGH University, Krakow, research group, computational intelligence">
-  <meta name="robots" content="index, follow">
+  <title>HELIX Research Group — Evolutionary Computation &amp; Machine Learning | AGH University of Krakow</title>
+  <meta name="description" content="HELIX Research Group at AGH University of Krakow, Poland — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.">
+  <meta name="keywords" content="evolutionary computation, metaheuristics, global optimization, fitness landscape analysis, exploratory landscape analysis, local optima networks, surrogate-assisted optimization, machine learning, AGH University, Krakow, research group, computational intelligence">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+  <meta name="author" content="HELIX Research Group, AGH University of Krakow">
+  <meta name="theme-color" content="#f6f5f1" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f0f0e" media="(prefers-color-scheme: dark)">
   <link rel="canonical" href="https://helix-agh.github.io/">
   <link rel="icon" type="image/png" href="assets/agh-tile.png">
+  <link rel="alternate" type="text/plain" title="LLM-readable summary" href="https://helix-agh.github.io/llms.txt">
+
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="HELIX Research Group">
   <meta property="og:title" content="HELIX Research Group | AGH University of Krakow">
-  <meta property="og:description"
-    content="HELIX Research Group at AGH University of Krakow, Poland — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.">
+  <meta property="og:description" content="HELIX Research Group at AGH University of Krakow, Poland — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.">
   <meta property="og:url" content="https://helix-agh.github.io/">
   <meta property="og:image" content="https://helix-agh.github.io/assets/og.png">
   <meta property="og:image:type" content="image/png">
@@ -26,119 +27,158 @@
   <meta property="og:image:alt" content="HELIX Research Group — AGH University of Krakow">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="HELIX Research Group | AGH University of Krakow">
-  <meta name="twitter:description"
-    content="HELIX Research Group at AGH University of Krakow, Poland — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.">
+  <meta name="twitter:description" content="HELIX Research Group at AGH University of Krakow, Poland — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.">
   <meta name="twitter:image" content="https://helix-agh.github.io/assets/og.png">
   <meta name="twitter:image:alt" content="HELIX Research Group — AGH University of Krakow">
-  <link rel="preload" href="assets/fonts/SpaceGrotesk-700-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="assets/fonts/SpaceGrotesk-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&amp;family=Geist+Mono:wght@400;500&amp;family=Newsreader:opsz,wght@6..72,300&amp;display=swap">
   <link rel="stylesheet" href="styles.css">
+
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebSite",
-          "@id": "https://helix-agh.github.io/#website",
-          "url": "https://helix-agh.github.io/",
-          "name": "HELIX Research Group"
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://helix-agh.github.io/#website",
+        "url": "https://helix-agh.github.io/",
+        "name": "HELIX Research Group",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://helix-agh.github.io/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://helix-agh.github.io/#webpage",
+        "url": "https://helix-agh.github.io/",
+        "name": "HELIX Research Group — Evolutionary Computation & Machine Learning | AGH University of Krakow",
+        "description": "HELIX Research Group at AGH University of Krakow — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.",
+        "inLanguage": "en",
+        "dateModified": "2026-11-02",
+        "isPartOf": { "@id": "https://helix-agh.github.io/#website" },
+        "about": { "@id": "https://helix-agh.github.io/#organization" }
+      },
+      {
+        "@type": "ResearchOrganization",
+        "@id": "https://helix-agh.github.io/#organization",
+        "name": "HELIX Research Group",
+        "alternateName": ["HELIX Lab", "HELIX — Heuristics, Evolution and Learning for Intelligent eXploration"],
+        "url": "https://helix-agh.github.io/",
+        "logo": { "@type": "ImageObject", "url": "https://helix-agh.github.io/assets/agh-tile.png" },
+        "image": "https://helix-agh.github.io/assets/og.png",
+        "description": "HELIX is a research group at the Faculty of Computer Science, AGH University of Krakow, working at the intersection of evolutionary computation and machine learning on high-dimensional global optimization.",
+        "email": "wachtelik@agh.edu.pl",
+        "knowsAbout": ["Evolutionary computation", "Metaheuristics", "Global optimization", "Fitness landscape analysis", "Exploratory Landscape Analysis", "Local Optima Networks", "Surrogate-assisted optimization", "Machine learning", "Dynamic algorithm selection", "Model predictive control", "Benchmark generation with large language models"],
+        "address": { "@type": "PostalAddress", "addressLocality": "Kraków", "addressCountry": "PL" },
+        "location": { "@type": "Place", "name": "Kraków, Poland" },
+        "parentOrganization": {
+          "@type": "CollegeOrUniversity",
+          "name": "AGH University of Krakow",
+          "department": { "@type": "Organization", "name": "Faculty of Computer Science" },
+          "url": "https://www.agh.edu.pl/"
         },
-        {
-          "@type": "WebPage",
-          "@id": "https://helix-agh.github.io/#webpage",
-          "url": "https://helix-agh.github.io/",
-          "name": "HELIX Research Group | AGH University of Krakow",
-          "description": "HELIX Research Group at AGH University of Krakow — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.",
-          "isPartOf": {
-            "@id": "https://helix-agh.github.io/#website"
-          },
-          "about": {
-            "@id": "https://helix-agh.github.io/#organization"
-          }
-        },
-        {
-          "@type": "ResearchOrganization",
-          "@id": "https://helix-agh.github.io/#organization",
-          "name": "HELIX Research Group",
-          "alternateName": "HELIX Lab",
-          "url": "https://helix-agh.github.io/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://helix-agh.github.io/assets/agh-tile.png"
-          },
-          "image": "https://helix-agh.github.io/assets/og.png",
-          "description": "HELIX Research Group at AGH University of Krakow — evolutionary computation, metaheuristics, fitness landscape analysis, surrogate-assisted optimization, and machine learning for global optimization.",
-          "email": "wachtelik@agh.edu.pl",
-          "location": {
-            "@type": "Place",
-            "name": "Krakow, Poland"
-          },
-          "parentOrganization": {
-            "@type": "CollegeOrUniversity",
-            "name": "AGH University of Krakow",
-            "url": "https://www.agh.edu.pl/"
-          },
-          "sameAs": [
-            "https://github.com/helix-agh",
-            "https://badap.agh.edu.pl/autorzy/zespoly/helix-00552?limit=20&language=en"
-          ]
-        },
-        {
-          "@type": "Person",
-          "@id": "https://helix-agh.github.io/#maciej-smolka",
-          "name": "Maciej Smołka",
-          "jobTitle": "Professor",
-          "affiliation": {
-            "@id": "https://helix-agh.github.io/#organization"
-          }
-        },
-        {
-          "@type": "Person",
-          "@id": "https://helix-agh.github.io/#hubert-guzowski",
-          "name": "Hubert Guzowski",
-          "jobTitle": "PhD Student",
-          "affiliation": {
-            "@id": "https://helix-agh.github.io/#organization"
-          }
-        },
-        {
-          "@type": "Person",
-          "@id": "https://helix-agh.github.io/#wojciech-achtelik",
-          "name": "Wojciech Achtelik",
-          "jobTitle": "PhD Student",
-          "affiliation": {
-            "@id": "https://helix-agh.github.io/#organization"
-          }
-        },
-        {
-          "@type": "Person",
-          "@id": "https://helix-agh.github.io/#bartlomiej-walczak",
-          "name": "Bartłomiej Walczak",
-          "jobTitle": "Master Student",
-          "affiliation": {
-            "@id": "https://helix-agh.github.io/#organization"
-          }
-        },
-        {
-          "@type": "Person",
-          "@id": "https://helix-agh.github.io/#wladyslaw-niec",
-          "name": "Władysław Nieć",
-          "jobTitle": "Master Student",
-          "affiliation": {
-            "@id": "https://helix-agh.github.io/#organization"
-          }
-        },
-        {
-          "@type": "Person",
-          "@id": "https://helix-agh.github.io/#jerzy-boksa",
-          "name": "Jerzy Boksa",
-          "jobTitle": "Master Student",
-          "affiliation": {
-            "@id": "https://helix-agh.github.io/#organization"
-          }
-        }
-      ]
-    }
+        "member": [
+          { "@id": "https://helix-agh.github.io/#maciej-smolka" },
+          { "@id": "https://helix-agh.github.io/#hubert-guzowski" },
+          { "@id": "https://helix-agh.github.io/#wojciech-achtelik" },
+          { "@id": "https://helix-agh.github.io/#bartlomiej-walczak" },
+          { "@id": "https://helix-agh.github.io/#wladyslaw-niec" },
+          { "@id": "https://helix-agh.github.io/#jerzy-boksa" }
+        ],
+        "sameAs": [
+          "https://github.com/helix-agh",
+          "https://badap.agh.edu.pl/autorzy/zespoly/helix-00552?limit=20&language=en"
+        ]
+      },
+      { "@type": "Person", "@id": "https://helix-agh.github.io/#maciej-smolka", "name": "Maciej Smołka", "jobTitle": "Professor", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
+      { "@type": "Person", "@id": "https://helix-agh.github.io/#hubert-guzowski", "name": "Hubert Guzowski", "jobTitle": "PhD Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
+      { "@type": "Person", "@id": "https://helix-agh.github.io/#wojciech-achtelik", "name": "Wojciech Achtelik", "jobTitle": "PhD Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
+      { "@type": "Person", "@id": "https://helix-agh.github.io/#bartlomiej-walczak", "name": "Bartłomiej Walczak", "jobTitle": "Master Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
+      { "@type": "Person", "@id": "https://helix-agh.github.io/#wladyslaw-niec", "name": "Władysław Nieć", "jobTitle": "Master Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
+      { "@type": "Person", "@id": "https://helix-agh.github.io/#jerzy-boksa", "name": "Jerzy Boksa", "jobTitle": "Master Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://helix-agh.github.io/#lonkit",
+        "name": "lonkit",
+        "description": "A Python library for constructing, analyzing, and visualizing Local Optima Networks for continuous optimization problems.",
+        "codeRepository": "https://github.com/helix-agh/lonkit",
+        "url": "https://helix-agh.github.io/lonkit",
+        "sameAs": "https://pypi.org/project/lonkit/",
+        "programmingLanguage": "Python",
+        "author": { "@id": "https://helix-agh.github.io/#organization" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://helix-agh.github.io/#orivex",
+        "name": "orivex",
+        "description": "A fast Python engine for Exploratory Landscape Analysis: compute only the ELA features you need from sampled points, with an optional differentiable PyTorch backend.",
+        "codeRepository": "https://github.com/helix-agh/orivex",
+        "programmingLanguage": "Python",
+        "author": { "@id": "https://helix-agh.github.io/#organization" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://helix-agh.github.io/#clandscape",
+        "name": "clandscape",
+        "description": "Constrained landscape features and benchmarks for constrained continuous optimization, supporting reproducible analysis of constrained problem structure.",
+        "codeRepository": "https://github.com/helix-agh/clandscape",
+        "programmingLanguage": "Python",
+        "author": { "@id": "https://helix-agh.github.io/#organization" }
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "@id": "https://helix-agh.github.io/#pyhms",
+        "name": "pyHMS",
+        "description": "A Python implementation of Hierarchic Memetic Strategy: a population-based metaheuristic that organizes search processes into a tree-like hierarchy.",
+        "codeRepository": "https://github.com/helix-agh/pyhms",
+        "programmingLanguage": "Python",
+        "author": { "@id": "https://helix-agh.github.io/#organization" }
+      },
+      {
+        "@type": "ResearchProject",
+        "@id": "https://helix-agh.github.io/opus25.html#project",
+        "name": "Domain-agnostic synergetic combinations of global optimization metaheuristics",
+        "alternateName": "OPUS 25",
+        "identifier": "UMO-2023/49/B/ST6/01404",
+        "url": "https://helix-agh.github.io/opus25.html",
+        "funder": { "@type": "Organization", "name": "National Science Centre, Poland (NCN)", "url": "https://www.ncn.gov.pl/" },
+        "parentOrganization": { "@id": "https://helix-agh.github.io/#organization" }
+      },
+      {
+        "@type": "ResearchProject",
+        "@id": "https://helix-agh.github.io/#opus28",
+        "name": "Optimizing Robust Delayed Feedback and Predictive Control Problems via Advanced Metaheuristics",
+        "alternateName": "OPUS 28 LAP",
+        "identifier": "UMO-2024/55/I/ST7/02912",
+        "funder": { "@type": "Organization", "name": "National Science Centre, Poland (NCN)", "url": "https://www.ncn.gov.pl/" },
+        "parentOrganization": { "@id": "https://helix-agh.github.io/#organization" }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Automatic Design of Optimization Test Problems with Large Language Models",
+        "url": "https://ieeexplore.ieee.org/document/11719708/",
+        "sameAs": ["https://arxiv.org/abs/2602.02724", "https://github.com/helix-agh/ela-guided-llm-bench"],
+        "isPartOf": { "@type": "Periodical", "name": "IEEE Transactions on Evolutionary Computation" },
+        "sourceOrganization": { "@id": "https://helix-agh.github.io/#organization" }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "RL-Exponential-DAS: Exponential Decision Schedules for Dynamic Algorithm Selection",
+        "url": "https://link.springer.com/chapter/10.1007/978-3-032-36217-9_10",
+        "isPartOf": { "@type": "Event", "name": "PPSN 2026", "url": "https://ppsn2026.disi.unitn.it/" },
+        "sourceOrganization": { "@id": "https://helix-agh.github.io/#organization" }
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Analyzing search behavior of population-based optimization algorithms using graph neural networks",
+        "url": "https://dl.acm.org/doi/10.1145/3795095.3805195",
+        "identifier": { "@type": "PropertyValue", "propertyID": "DOI", "value": "10.1145/3795095.3805195" },
+        "isPartOf": { "@type": "Event", "name": "GECCO 2026", "url": "https://gecco-2026.sigevo.org/" },
+        "sourceOrganization": { "@id": "https://helix-agh.github.io/#organization" }
+      }
+    ]
+  }
   </script>
 
   <!-- Google tag (gtag.js) -->
@@ -147,329 +187,229 @@
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-
     gtag('config', 'G-CJT02Z2Z7W');
   </script>
 </head>
 
 <body>
-  <div class="preloader" aria-hidden="true">
-    <div class="preloader-mark">HELIX&nbsp;<span class="spark">&#10022;</span></div>
-  </div>
+  <a class="skip" href="#main">Skip to content</a>
 
-  <div class="bg-overlay" aria-hidden="true"></div>
-  <div class="glow-orb glow-1"></div>
-  <div class="glow-orb glow-2"></div>
-
-  <nav class="topbar">
-    <a href="/" class="brand">
-      <img src="assets/agh.svg" alt="AGH University of Krakow logo" width="80" height="80">
-      <div class="brand-text">
-        <p class="brand-kicker">AGH University of Krakow</p>
-        <h1 class="brand-name">HELIX Lab</h1>
-      </div>
-    </a>
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#research">Research</a>
-      <a href="#projects">Projects</a>
-      <a href="#announcements">News</a>
-      <a href="#publications">Publications</a>
-      <a href="#team">Team</a>
-      <a href="#involved" class="nav-cta">Collaborate</a>
-    </div>
-  </nav>
-
-  <header class="hero">
-    <div class="hero-inner">
-      <div class="technical-line"></div>
-      <div class="hero-metadata">
-        <span>Kraków, PL</span>
-        <span>Evolutionary Computation</span>
-        <span>Machine Learning</span>
-      </div>
-      <h2 class="hero-title">Heuristics, Evolution and Learning for Intelligent eXploration</h2>
+  <header class="topbar">
+    <div class="wrap">
+      <a href="/" class="brand" aria-label="HELIX Research Group — home">
+        <span class="brand-name">HELIX</span>
+        <span class="brand-sub">AGH Kraków</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#research">Research</a>
+        <a href="#software">Software</a>
+        <a href="#news">News</a>
+        <a href="#team">Team</a>
+        <a href="https://badap.agh.edu.pl/autorzy/zespoly/helix-00552?limit=20&amp;language=en" target="_blank" rel="noopener">Publications</a>
+        <a href="#contact" class="pill">Collaborate</a>
+      </nav>
     </div>
   </header>
 
-  <main class="bento-grid">
-    <!-- Lab Overview -->
-    <section id="about" class="card span-8" data-reveal>
-      <span class="card-label">Group Overview</span>
-      <h2 class="card-title">Learning for Evolutionary Computation</h2>
-      <div class="card-content">
-        <p>HELIX operates at the intersection of Evolutionary Computation and
-          Machine Learning. We focus on developing methodologies for solving high-dimensional global optimization
-          problems where conventional methods fail.</p>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <p class="eyebrow"><span class="dot" aria-hidden="true"></span><span>HELIX Research Group</span><span aria-hidden="true">/</span><span>AGH University of Krakow</span></p>
+      <h1 id="hero-title" class="display">Learning for evolutionary computation.</h1>
+      <div class="hero-foot">
+        <p class="lede"><strong>Heuristics, Evolution and Learning for Intelligent eXploration.</strong> We study what makes optimization hard, and turn that structure into algorithms that find better solutions.</p>
+        <div class="actions">
+          <a href="#software" class="btn btn-solid">Explore our libraries <span aria-hidden="true">→</span></a>
+          <a href="#research" class="btn btn-line">Research areas</a>
+        </div>
       </div>
+      <div class="field" aria-hidden="true"><canvas id="field"></canvas></div>
     </section>
 
-    <!-- Context Info -->
-    <section class="card span-4" data-reveal>
-      <span class="card-label">System Context</span>
-      <h2 class="card-title">Leading Unit</h2>
-      <div class="card-content">
-        <div
-          style="margin-top: 1rem; padding: 1rem; background: rgba(255,255,255,0.02); border: 1px solid var(--panel-border);">
-          <code style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent);">
-            AGH University of Krakow<br>
-            Faculty of Computer Science<br>
-            Krakow, Poland
-          </code>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stat Strip -->
-    <section class="card span-12 stats-band" data-reveal>
-      <div class="stat-cell">
-        <div class="stat-num"><span data-count="6">6</span></div>
-        <div class="stat-label">Researchers</div>
-      </div>
-      <div class="stat-cell">
-        <div class="stat-num"><span data-count="3">3</span></div>
-        <div class="stat-label">Open-source libraries</div>
-      </div>
-      <div class="stat-cell">
-        <div class="stat-num"><span data-count="2">2</span></div>
-        <div class="stat-label">Active grants</div>
-      </div>
-      <div class="stat-cell">
-        <div class="stat-num"><span data-count="2">2</span></div>
-        <div class="stat-label">Partner institutions</div>
-      </div>
-    </section>
-
-    <!-- Research Tracks -->
-    <section id="research" class="card span-12" data-reveal>
-      <span class="card-label">Active Research Tracks</span>
-      <div class="area-grid">
-        <div class="area-item">
-          <h3>Evolutionary Computation</h3>
-          <p>Population-based search dynamics and robust metaheuristic design.</p>
-        </div>
-        <div class="area-item">
-          <h3>Landscape Analysis</h3>
-          <p>Structural characterization of search spaces to explain performance.</p>
-        </div>
-        <div class="area-item">
-          <h3>Machine Learning</h3>
-          <p>Surrogate-assisted optimization and data-driven modeling.</p>
-        </div>
-        <div class="area-item">
-          <h3>Control Systems</h3>
-          <p>Optimization of Predictive Control Problems.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Statement -->
-    <section class="span-12 statement-band" data-reveal>
-      <span class="spark" aria-hidden="true">&#10022;</span>
-      <p>We study what makes optimization hard, and turn that structure into algorithms that find better solutions.</p>
-    </section>
-
-    <!-- Open Source Projects -->
-    <section id="projects" class="card span-12" data-reveal>
-      <span class="card-label">Open Source</span>
-      <h2 class="card-title">Our Libraries</h2>
-      <div class="project-grid">
-        <a href="https://github.com/helix-agh/lonkit" target="_blank" rel="noopener" class="project-card">
-          <div class="project-info">
-            <h3>lonkit</h3>
-            <p>A Python library for constructing, analyzing, and visualizing Local Optima Networks for continuous
-              optimization problems. LONs provide a powerful way to understand the structure of fitness landscapes,
-              revealing how local optima are connected and how difficult it may be to find global optima.</p>
-            <span class="project-link">github.com/helix-agh/lonkit</span>
-          </div>
-        </a>
-        <a href="https://github.com/helix-agh/orivex" target="_blank" rel="noopener" class="project-card">
-          <div class="project-info">
-            <h3>orivex</h3>
-            <p>A fast Python engine for Exploratory Landscape Analysis: compute only the ELA features you need from
-              sampled points, with an optional differentiable PyTorch backend.</p>
-            <span class="project-link">github.com/helix-agh/orivex</span>
-          </div>
-        </a>
-        <a href="https://github.com/helix-agh/clandscape" target="_blank" rel="noopener" class="project-card">
-          <div class="project-info">
-            <h3>clandscape</h3>
-            <p>Constrained landscape features and benchmarks for constrained continuous optimization, supporting
-              reproducible analysis of constrained problem structure.</p>
-            <span class="project-link">github.com/helix-agh/clandscape</span>
-          </div>
-        </a>
-        <a href="https://github.com/helix-agh/pyhms" target="_blank" rel="noopener" class="project-card">
-          <div class="project-info">
-            <h3>pyHMS</h3>
-            <p>A Python implementation of Hierarchic Memetic Strategy: a population-based metaheuristic that
-              organizes search processes into a tree-like hierarchy, enabling adaptive exploration at multiple
-              resolution levels.</p>
-            <span class="project-link">github.com/helix-agh/pyhms</span>
-          </div>
-        </a>
-      </div>
-    </section>
-
-    <!-- Announcements -->
-    <section id="announcements" class="card span-12" data-reveal>
-      <span class="card-label">Announcements</span>
-      <h2 class="card-title">Latest News</h2>
-      <div class="announcements-list" id="announcements-list">
-        <noscript>
-          <p style="color: var(--ink-soft); font-size: 0.9rem;">Enable JavaScript to view announcements.</p>
-        </noscript>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section id="team" class="card span-6" data-reveal>
-      <span class="card-label">Personnel</span>
-      <h2 class="card-title">Team</h2>
-      <div class="team-list">
-        <div class="team-member role-professor">
-          <div class="team-name">Maciej Smołka</div>
-          <div class="team-role">Professor</div>
-        </div>
-        <div class="team-member role-phd">
-          <div class="team-name">Hubert Guzowski</div>
-          <div class="team-role">PhD Student</div>
-        </div>
-        <div class="team-member role-phd">
-          <div class="team-name">Wojciech Achtelik</div>
-          <div class="team-role">PhD Student</div>
-        </div>
-        <div class="team-member role-master">
-          <div class="team-name">Bartłomiej Walczak</div>
-          <div class="team-role">Master Student</div>
-        </div>
-        <div class="team-member role-master">
-          <div class="team-name">Władysław Nieć</div>
-          <div class="team-role">Master Student</div>
-        </div>
-        <div class="team-member role-master">
-          <div class="team-name">Jerzy Boksa</div>
-          <div class="team-role">Master Student</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Grants -->
-    <section class="card span-6" data-reveal>
-      <span class="card-label">Active Grants</span>
-      <h2 class="card-title">Projects</h2>
-      <div style="font-size: 0.9rem; color: var(--ink-soft);">
-        <div style="margin-bottom: 2rem;">
-          <a href="opus25.html" style="font-family: var(--font-mono); color: var(--accent); margin-bottom: 0.5rem; display: block; text-decoration: none;">[ OPUS 25 ]</a>
-          <div>Domain-agnostic synergetic combinations of global optimization metaheuristics.</div>
-          <div style="font-size: 0.7rem; margin-top: 0.5rem; color: var(--ink-muted);">REF: UMO-2023/49/B/ST6/01404
-          </div>
-        </div>
+    <section id="research" class="section wrap" aria-labelledby="research-title">
+      <div class="section-head">
+        <p class="kicker">01 — Research</p>
         <div>
-          <div style="font-family: var(--font-mono); color: var(--accent); margin-bottom: 0.5rem;">[ OPUS 28 LAP ]</div>
-          <div>Optimizing Robust Delayed Feedback and Predictive Control Problems via Advanced Metaheuristics</div>
-          <div style="font-size: 0.7rem; margin-top: 0.5rem; color: var(--ink-muted);">REF: UMO-2024/55/I/ST7/02912
-          </div>
+          <h2 id="research-title" class="h2">Global optimization where conventional methods fail.</h2>
+          <p class="section-intro">HELIX operates at the intersection of Evolutionary Computation and Machine Learning. We focus on developing methodologies for solving high-dimensional global optimization problems where conventional methods fail.</p>
+        </div>
+      </div>
+      <ul class="list">
+        <li class="row"><span class="row-n">01</span><div class="row-body"><h3 class="row-title">Evolutionary Computation</h3><p class="row-text">Population-based search dynamics and robust metaheuristic design.</p></div></li>
+        <li class="row"><span class="row-n">02</span><div class="row-body"><h3 class="row-title">Landscape Analysis</h3><p class="row-text">Structural characterization of search spaces to explain performance.</p></div></li>
+        <li class="row"><span class="row-n">03</span><div class="row-body"><h3 class="row-title">Machine Learning</h3><p class="row-text">Surrogate-assisted optimization and data-driven modeling.</p></div></li>
+        <li class="row"><span class="row-n">04</span><div class="row-body"><h3 class="row-title">Control Systems</h3><p class="row-text">Optimization of Predictive Control Problems.</p></div></li>
+      </ul>
+    </section>
+
+    <section id="software" class="section wrap" aria-labelledby="software-title">
+      <div class="section-head">
+        <p class="kicker">02 — Open source</p>
+        <div>
+          <h2 id="software-title" class="h2">Rigorous evaluation. Reproducible benchmarks. Open tools.</h2>
+          <p class="section-intro">Python libraries we build and maintain for landscape analysis and metaheuristic optimization.</p>
+        </div>
+      </div>
+      <div class="libs">
+        <a class="lib" href="https://github.com/helix-agh/lonkit" target="_blank" rel="noopener">
+          <div class="lib-top"><h3 class="lib-name">lonkit</h3><span aria-hidden="true">↗</span></div>
+          <span class="lib-tag">Local Optima Networks</span>
+          <p>A Python library for constructing, analyzing, and visualizing Local Optima Networks for continuous optimization problems. LONs provide a powerful way to understand the structure of fitness landscapes, revealing how local optima are connected and how difficult it may be to find global optima.</p>
+          <span class="lib-path">github.com/helix-agh/lonkit</span>
+        </a>
+        <a class="lib" href="https://github.com/helix-agh/orivex" target="_blank" rel="noopener">
+          <div class="lib-top"><h3 class="lib-name">orivex</h3><span aria-hidden="true">↗</span></div>
+          <span class="lib-tag">Exploratory Landscape Analysis</span>
+          <p>A fast Python engine for Exploratory Landscape Analysis: compute only the ELA features you need from sampled points, with an optional differentiable PyTorch backend.</p>
+          <span class="lib-path">github.com/helix-agh/orivex</span>
+        </a>
+        <a class="lib" href="https://github.com/helix-agh/clandscape" target="_blank" rel="noopener">
+          <div class="lib-top"><h3 class="lib-name">clandscape</h3><span aria-hidden="true">↗</span></div>
+          <span class="lib-tag">Constrained optimization</span>
+          <p>Constrained landscape features and benchmarks for constrained continuous optimization, supporting reproducible analysis of constrained problem structure.</p>
+          <span class="lib-path">github.com/helix-agh/clandscape</span>
+        </a>
+        <a class="lib" href="https://github.com/helix-agh/pyhms" target="_blank" rel="noopener">
+          <div class="lib-top"><h3 class="lib-name">pyHMS</h3><span aria-hidden="true">↗</span></div>
+          <span class="lib-tag">Hierarchic Memetic Strategy</span>
+          <p>A Python implementation of Hierarchic Memetic Strategy: a population-based metaheuristic that organizes search processes into a tree-like hierarchy, enabling adaptive exploration at multiple resolution levels.</p>
+          <span class="lib-path">github.com/helix-agh/pyhms</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="news" class="section wrap" aria-labelledby="news-title">
+      <div class="section-head">
+        <p class="kicker">03 — News</p>
+        <h2 id="news-title" class="h2">Latest from the group.</h2>
+      </div>
+      <!-- Pre-rendered from announcements/*.md so search engines and AI crawlers can read it without JS.
+           New entries added only to announcements/index.json are appended by main.js. -->
+      <ol class="list" id="news-list" reversed>
+        <li class="row" data-file="2026-10-08-eotf-ieee-tevc.md">
+          <time class="row-date" datetime="2026-10-08">2026-10-08</time>
+          <article class="news-body">
+            <h3 class="row-title">Paper accepted in IEEE Transactions on Evolutionary Computation</h3>
+            <p>We are delighted to announce that our paper <strong>"Automatic Design of Optimization Test Problems with Large Language Models"</strong> has been accepted for publication in <strong>IEEE Transactions on Evolutionary Computation</strong>!</p>
+            <p>Standard benchmark suites such as BBOB offer limited coverage of possible optimization landscapes. We use LLM-guided evolution to generate benchmark functions with specified landscape characteristics: an LLM proposes and modifies readable Python code, while evolutionary selection favors functions whose measured landscape features best match a target profile.</p>
+            <p>The paper is available on <a href="https://ieeexplore.ieee.org/document/11719708/" target="_blank" rel="noopener">IEEE Xplore</a>, and the code on <a href="https://github.com/helix-agh/ela-guided-llm-bench" target="_blank" rel="noopener">GitHub</a>.</p>
+          </article>
+        </li>
+        <li class="row" data-file="2026-06-01-ppsn-2026-exp-das.md">
+          <time class="row-date" datetime="2026-06-01">2026-06-01</time>
+          <article class="news-body">
+            <h3 class="row-title">Paper accepted at PPSN 2026</h3>
+            <p>We are extremely happy and proud to announce, that a paper we prepared: <strong>"<a href="https://link.springer.com/chapter/10.1007/978-3-032-36217-9_10" target="_blank" rel="noopener">RL-Exponential-DAS: Exponential Decision Schedules for Dynamic Algorithm Selection</a>"</strong> has been accepted at <a href="https://ppsn2026.disi.unitn.it/" target="_blank" rel="noopener">PPSN 2026</a>.</p>
+            <p>The work studies how the scheduling of optimization-evaluation-decision periods impacts the performance and behaviour of population-based optimization algorithms.</p>
+          </article>
+        </li>
+        <li class="row" data-file="2026-05-27-eotf-preprint.md">
+          <time class="row-date" datetime="2026-05-27">2026-05-27</time>
+          <article class="news-body">
+            <h3 class="row-title">Preprint: Automatic Design of Optimization Test Problems with LLMs</h3>
+            <p>Our preprint <strong>"Automatic Design of Optimization Test Problems with Large Language Models"</strong> is now available on <a href="https://arxiv.org/abs/2602.02724" target="_blank" rel="noopener">arXiv</a>.</p>
+            <p>The paper introduces <strong>Evolution of Test Functions (EoTF)</strong>, a framework that automatically generates continuous optimization test functions whose landscapes match a specified target Exploratory Landscape Analysis (ELA) feature vector. EoTF adapts LLM-driven evolutionary search to evolve interpretable, self-contained numpy implementations of objective functions, offering a scalable and portable route to benchmark generation targeted to desired landscape properties.</p>
+          </article>
+        </li>
+        <li class="row" data-file="2026-05-27-gecco-2026-gnn-paper.md">
+          <time class="row-date" datetime="2026-05-27">2026-05-27</time>
+          <article class="news-body">
+            <h3 class="row-title">Paper accepted at GECCO 2026</h3>
+            <p>We are delighted to announce that our paper <strong>"<a href="https://dl.acm.org/doi/10.1145/3795095.3805195" target="_blank" rel="noopener">Analyzing search behavior of population-based optimization algorithms using graph neural networks</a>"</strong> has been accepted at <a href="https://gecco-2026.sigevo.org/" target="_blank" rel="noopener">GECCO 2026</a>.</p>
+            <p>The work studies how graph neural networks can characterize and explain the search behavior of population-based optimization algorithms.</p>
+          </article>
+        </li>
+        <li class="row" data-file="2026-03-27-lonkit-pypi.md">
+          <time class="row-date" datetime="2026-03-27">2026-03-27</time>
+          <article class="news-body">
+            <h3 class="row-title">lonkit released on PyPI</h3>
+            <p>We are happy to announce the release of <strong>lonkit</strong> on <a href="https://pypi.org/project/lonkit/" target="_blank" rel="noopener">PyPI</a>!</p>
+            <p><strong>lonkit</strong> is a Python library for constructing, analyzing, and visualizing Local Optima Networks (LONs) for both continuous and discrete optimization problems. LONs reveal how local optima are connected and how difficult it may be to find global optima.</p>
+            <p>Install it with:</p>
+            <pre><code>pip install lonkit</code></pre>
+            <p>Key features include Basin-Hopping, Iterated Local Search sampling, Compressed Monotonic LONs, landscape metrics, and 2D/3D visualizations.</p>
+            <p>Check out the <a href="https://helix-agh.github.io/lonkit" target="_blank" rel="noopener">documentation</a> and the <a href="https://github.com/helix-agh/lonkit" target="_blank" rel="noopener">GitHub repository</a> to get started.</p>
+          </article>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="section wrap" aria-labelledby="projects-title">
+      <div class="section-head">
+        <p class="kicker">04 — Funded projects</p>
+        <h2 id="projects-title" class="h2">Active grants.</h2>
+      </div>
+      <div class="grants">
+        <a class="grant" href="opus25.html">
+          <span class="grant-top"><span>NCN · OPUS 25</span><span class="muted">Project page →</span></span>
+          <h3 class="grant-title">Domain-agnostic synergetic combinations of global optimization metaheuristics.</h3>
+          <span class="grant-ref">UMO-2023/49/B/ST6/01404</span>
+        </a>
+        <div class="grant">
+          <span class="grant-top"><span>NCN · OPUS 28 LAP</span></span>
+          <h3 class="grant-title">Optimizing Robust Delayed Feedback and Predictive Control Problems via Advanced Metaheuristics</h3>
+          <span class="grant-ref">UMO-2024/55/I/ST7/02912</span>
         </div>
       </div>
     </section>
 
-    <!-- Statement -->
-    <section class="span-12 statement-band" data-reveal>
-      <span class="spark" aria-hidden="true">&#10022;</span>
-      <p>Rigorous evaluation. Reproducible benchmarks. Open tools.</p>
+    <section id="team" class="section wrap" aria-labelledby="team-title">
+      <div class="section-head">
+        <p class="kicker">05 — People</p>
+        <div>
+          <h2 id="team-title" class="h2">The team.</h2>
+          <p class="section-intro">Faculty of Computer Science, AGH University of Krakow.</p>
+        </div>
+      </div>
+      <ul class="team">
+        <li id="maciej-smolka"><span class="team-name">Maciej Smołka</span><span class="team-role">Professor</span></li>
+        <li id="hubert-guzowski"><span class="team-name">Hubert Guzowski</span><span class="team-role">PhD Student</span></li>
+        <li id="wojciech-achtelik"><span class="team-name">Wojciech Achtelik</span><span class="team-role">PhD Student</span></li>
+        <li id="bartlomiej-walczak"><span class="team-name">Bartłomiej Walczak</span><span class="team-role">Master Student</span></li>
+        <li id="wladyslaw-niec"><span class="team-name">Władysław Nieć</span><span class="team-role">Master Student</span></li>
+        <li id="jerzy-boksa"><span class="team-name">Jerzy Boksa</span><span class="team-role">Master Student</span></li>
+      </ul>
     </section>
 
-    <!-- Publications -->
-    <section id="publications" class="card span-12" data-reveal>
-      <span class="card-label">Publications</span>
-      <h2 class="card-title">Our Research Output</h2>
-      <p style="font-size: 0.9rem; color: var(--ink-soft); margin-bottom: 1.5rem;">Browse our full list of publications
-        on AGH's BaDAP repository.</p>
-      <a href="https://badap.agh.edu.pl/autorzy/zespoly/helix-00552?limit=20&language=en" target="_blank" rel="noopener"
-        style="color: var(--accent); font-family: var(--font-mono); text-decoration: none; border: 1px solid var(--accent); padding: 0.5rem 1rem;">
-        VIEW PUBLICATIONS ON BADAP
+    <section id="publications" class="section wrap" aria-label="Publications">
+      <a class="pubs" href="https://badap.agh.edu.pl/autorzy/zespoly/helix-00552?limit=20&amp;language=en" target="_blank" rel="noopener">
+        <span class="kicker" style="padding-top:0">06 — Publications</span>
+        <span class="pubs-text">Browse our full list of publications on AGH's BaDAP repository</span>
+        <span class="pubs-arrow" aria-hidden="true">↗</span>
       </a>
     </section>
 
-    <!-- Involvement -->
-    <section id="involved" class="card span-12" data-reveal>
-      <span class="card-label">Collaboration</span>
-      <div class="collab-layout">
-        <div style="flex: 1;">
-          <h2 class="card-title">Open for Collaborative Research</h2>
-          <p>We welcome collaboration with academic and industry researchers interested in rigorous algorithmic
-            evaluation and optimization. Please contact us regarding potential research collaborations or student thesis
-            opportunities.</p>
-          <div style="margin-top: 1.5rem;">
-            <a href="mailto:wachtelik@agh.edu.pl"
-              style="color: var(--accent); font-family: var(--font-mono); text-decoration: none; border: 1px solid var(--accent); padding: 0.5rem 1rem;">
-              SEND RESEARCH INQUIRY
-            </a>
-          </div>
+    <section id="contact" class="section contact wrap" aria-labelledby="contact-title">
+      <div class="contact-grid">
+        <div>
+          <p class="kicker" style="padding-top:0">07 — Collaborate</p>
+          <h2 id="contact-title" class="display">Open for collaborative research.</h2>
+          <p class="section-intro">We welcome collaboration with academic and industry researchers interested in rigorous algorithmic evaluation and optimization. Please contact us regarding potential research collaborations or student thesis opportunities.</p>
+          <a href="mailto:wachtelik@agh.edu.pl" class="btn btn-accent">Send a research inquiry <span aria-hidden="true">→</span></a>
         </div>
-        <div class="collab-partners">
-          <div style="font-family: var(--font-mono); font-size: 0.8rem; margin-bottom: 1rem; color: var(--accent);">//
-            PARTNER_NODES</div>
-          <ul style="list-style: none; padding: 0; font-size: 0.8rem; color: var(--ink);">
-            <li style="margin-bottom: 0.5rem;">• Tomas Bata University, Zlín</li>
-            <li>• Czech Technical University, Prague</li>
-          </ul>
-        </div>
+        <ul class="partners">
+          <li class="head">Partner institutions</li>
+          <li><span>Tomas Bata University</span><span class="muted">Zlín</span></li>
+          <li><span>Czech Technical University</span><span class="muted">Prague</span></li>
+        </ul>
       </div>
     </section>
   </main>
 
-  <script>
-    // Minimal markdown -> HTML (bold, links, inline + fenced code, paragraphs).
-    // Replaces the marked CDN dependency: no third-party, no render-blocking request.
-    function mdToHtml(md) {
-      const esc = (s) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-      const codes = [];
-      md = md.replace(/```[\w-]*\n([\s\S]*?)```/g, (_, c) => {
-        codes.push('<pre><code>' + esc(c.replace(/\n$/, '')) + '</code></pre>');
-        return '@@CB' + (codes.length - 1) + '@@';
-      });
-      const inline = (t) => esc(t)
-        .replace(/`([^`]+)`/g, (_, c) => '<code>' + c + '</code>')
-        .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')
-        .replace(/\[([^\]]+)\]\(([^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
-      return md.split(/\n{2,}/).map((b) => {
-        b = b.trim();
-        if (!b) return '';
-        if (/^@@CB\d+@@$/.test(b)) return codes[+b.replace(/[^\d]/g, '')];
-        return '<p>' + inline(b).replace(/\n/g, ' ') + '</p>';
-      }).join('').replace(/@@CB(\d+)@@/g, (_, i) => codes[+i]);
-    }
-
-    (async function () {
-      const list = document.getElementById('announcements-list');
-      try {
-        const res = await fetch('announcements/index.json');
-        const posts = await res.json();
-        for (const post of posts) {
-          const md = await (await fetch('announcements/' + post.file)).text();
-          const article = document.createElement('article');
-          article.className = 'announcement';
-          article.innerHTML =
-            '<div class="announcement-header">' +
-            '<h3 class="announcement-title">' + post.title + '</h3>' +
-            '<time class="announcement-date">' + post.date + '</time>' +
-            '</div>' +
-            '<div class="announcement-body">' + mdToHtml(md) + '</div>';
-          list.appendChild(article);
-        }
-      } catch (e) {
-        list.innerHTML = '<p style="color:var(--ink-muted);font-size:0.9rem;">Could not load announcements.</p>';
-      }
-    })();
-  </script>
-
-  <footer>
-    <div>&copy; 2026 HELIX RESEARCH LAB // AGH KRAKOW</div>
+  <footer class="footer">
+    <div class="wrap">
+      <div class="footer-col">
+        <span class="footer-brand">HELIX</span>
+        <address style="font-style:normal">Faculty of Computer Science<br>AGH University of Krakow, Poland</address>
+      </div>
+      <div class="footer-col">
+        <a href="https://github.com/helix-agh" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://badap.agh.edu.pl/autorzy/zespoly/helix-00552?limit=20&amp;language=en" target="_blank" rel="noopener">Publications (BaDAP)</a>
+        <a href="mailto:wachtelik@agh.edu.pl">wachtelik@agh.edu.pl</a>
+      </div>
+      <div class="footer-copy">© 2026 HELIX Research Group</div>
+    </div>
   </footer>
 
   <script src="main.js" defer></script>
 </body>
-
 </html>
