@@ -83,8 +83,7 @@
           { "@id": "https://helix-agh.github.io/#hubert-guzowski" },
           { "@id": "https://helix-agh.github.io/#wojciech-achtelik" },
           { "@id": "https://helix-agh.github.io/#bartlomiej-walczak" },
-          { "@id": "https://helix-agh.github.io/#wladyslaw-niec" },
-          { "@id": "https://helix-agh.github.io/#jerzy-boksa" }
+          { "@id": "https://helix-agh.github.io/#wladyslaw-niec" }
         ],
         "sameAs": [
           "https://github.com/helix-agh",
@@ -94,9 +93,8 @@
       { "@type": "Person", "@id": "https://helix-agh.github.io/#maciej-smolka", "name": "Maciej Smołka", "jobTitle": "Professor", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
       { "@type": "Person", "@id": "https://helix-agh.github.io/#hubert-guzowski", "name": "Hubert Guzowski", "jobTitle": "PhD Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
       { "@type": "Person", "@id": "https://helix-agh.github.io/#wojciech-achtelik", "name": "Wojciech Achtelik", "jobTitle": "PhD Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
-      { "@type": "Person", "@id": "https://helix-agh.github.io/#bartlomiej-walczak", "name": "Bartłomiej Walczak", "jobTitle": "Master Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
-      { "@type": "Person", "@id": "https://helix-agh.github.io/#wladyslaw-niec", "name": "Władysław Nieć", "jobTitle": "Master Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
-      { "@type": "Person", "@id": "https://helix-agh.github.io/#jerzy-boksa", "name": "Jerzy Boksa", "jobTitle": "Master Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
+      { "@type": "Person", "@id": "https://helix-agh.github.io/#bartlomiej-walczak", "name": "Bartłomiej Walczak", "jobTitle": "PhD Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
+      { "@type": "Person", "@id": "https://helix-agh.github.io/#wladyslaw-niec", "name": "Władysław Nieć", "jobTitle": "PhD Student", "affiliation": { "@id": "https://helix-agh.github.io/#organization" } },
       {
         "@type": "SoftwareSourceCode",
         "@id": "https://helix-agh.github.io/#lonkit",
@@ -265,7 +263,22 @@
           <span class="lib-path">github.com/helix-agh/orivex</span>
         </a>
         <a class="lib" href="https://github.com/helix-agh/clandscape" target="_blank" rel="noopener">
-          <div class="lib-media"><img src="assets/projects/clandscape.webp" alt="clandscape logo" width="720" height="405" loading="lazy" decoding="async"></div>
+          <div class="lib-media"><svg viewBox="0 0 720 405" role="img" aria-label="clandscape logo" fill="none" stroke="currentColor" stroke-width="2.5">
+            <defs>
+              <clipPath id="cl-inf"><rect x="160" y="100" width="80" height="205"/></clipPath>
+              <pattern id="cl-hatch" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><line x1="0" y1="0" x2="0" y2="9" stroke-width="1.5"/></pattern>
+            </defs>
+            <g transform="translate(13 0) rotate(-22 128 202)">
+              <ellipse cx="128" cy="202" rx="84" ry="56" fill="url(#cl-hatch)" stroke="none" clip-path="url(#cl-inf)"/>
+              <ellipse cx="128" cy="202" rx="84" ry="56"/>
+              <ellipse cx="128" cy="202" rx="58" ry="38"/>
+              <ellipse cx="128" cy="202" rx="32" ry="21"/>
+              <line x1="160" y1="128" x2="160" y2="276" stroke-width="3.5"/>
+              <circle cx="128" cy="202" r="5"/>
+              <circle cx="160" cy="202" r="7" fill="currentColor" stroke="none"/>
+            </g>
+            <text x="261" y="230" fill="currentColor" stroke="none" style="font: 500 78px var(--sans); letter-spacing: -.03em">clandscape</text>
+          </svg></div>
           <div class="lib-top"><h3 class="lib-name">clandscape</h3><span aria-hidden="true">↗</span></div>
           <span class="lib-tag">Constrained optimization</span>
           <p>Constrained landscape features and benchmarks for constrained continuous optimization, supporting reproducible analysis of constrained problem structure.</p>
@@ -289,6 +302,27 @@
       <!-- Pre-rendered from announcements/*.md so search engines and AI crawlers can read it without JS.
            New entries added only to announcements/index.json are appended by main.js. -->
       <ol class="list" id="news-list" reversed>
+        <li class="row" data-file="2026-11-19-utb-zlin-workshop.md">
+          <time class="row-date" datetime="2026-11-19">2026-11-19</time>
+          <article class="news-body">
+            <h3 class="row-title">Joint workshop with Tomas Bata University in Zlín</h3>
+            <p>On 18–19 November 2026 we hosted our partners from the <strong>Faculty of Applied Informatics, Tomas Bata University in Zlín</strong> — Zuzana Komínková Oplatková, Libor Pekař and Petr Chalupa — for a two-day joint workshop at AGH.</p>
+            <figure class="news-media">
+              <img src="assets/news/2026-11-utb-zlin-workshop-800.webp" srcset="assets/news/2026-11-utb-zlin-workshop-800.webp 800w, assets/news/2026-11-utb-zlin-workshop-1600.webp 1600w" sizes="(max-width: 760px) calc(100vw - 32px), 680px" width="800" height="450" alt="HELIX and UTB Zlín researchers at the joint workshop at AGH, November 2026" loading="lazy" decoding="async">
+            </figure>
+            <p>The goal was to agree on the problems we will work on within our partnership. We discussed optimization problems from control engineering that we plan to tackle together.</p>
+            <p>We are looking forward to the next steps of the collaboration!</p>
+          </article>
+        </li>
+        <li class="row" data-file="2026-11-04-lonkit-softwarex.md">
+          <time class="row-date" datetime="2026-11-04">2026-11-04</time>
+          <article class="news-body">
+            <h3 class="row-title">lonkit paper accepted in SoftwareX</h3>
+            <p>We are happy to announce that our paper <strong>"lonkit: A Python toolkit for Local Optima Networks in continuous and discrete search spaces"</strong> has been accepted for publication in <strong>SoftwareX</strong>!</p>
+            <p>The paper describes <strong>lonkit</strong>, our open-source library for building, analyzing and visualizing Local Optima Networks. With a few lines of code you can sample a LON of any Python function (Basin-Hopping) or discrete problem (Iterated Local Search), compress it into a CMLON, compute funnel metrics, and plot it in 2D or 3D — for example, to watch Number Partitioning become hard across its phase transition.</p>
+            <p>This is joint work with Gabriela Ochoa (University of Stirling) and Jacek Mańdziuk (Warsaw University of Technology). Try it with <code>pip install lonkit</code> — see the <a href="https://helix-agh.github.io/lonkit" target="_blank" rel="noopener">documentation</a> and the <a href="https://github.com/helix-agh/lonkit" target="_blank" rel="noopener">GitHub repository</a>.</p>
+          </article>
+        </li>
         <li class="row" data-file="2026-10-08-eotf-ieee-tevc.md">
           <time class="row-date" datetime="2026-10-08">2026-10-08</time>
           <article class="news-body">
@@ -368,9 +402,8 @@
         <li id="maciej-smolka"><span class="team-name">Maciej Smołka</span><span class="team-role">Professor</span></li>
         <li id="hubert-guzowski"><span class="team-name">Hubert Guzowski</span><span class="team-role">PhD Student</span></li>
         <li id="wojciech-achtelik"><span class="team-name">Wojciech Achtelik</span><span class="team-role">PhD Student</span></li>
-        <li id="bartlomiej-walczak"><span class="team-name">Bartłomiej Walczak</span><span class="team-role">Master Student</span></li>
-        <li id="wladyslaw-niec"><span class="team-name">Władysław Nieć</span><span class="team-role">Master Student</span></li>
-        <li id="jerzy-boksa"><span class="team-name">Jerzy Boksa</span><span class="team-role">Master Student</span></li>
+        <li id="bartlomiej-walczak"><span class="team-name">Bartłomiej Walczak</span><span class="team-role">PhD Student</span></li>
+        <li id="wladyslaw-niec"><span class="team-name">Władysław Nieć</span><span class="team-role">PhD Student</span></li>
       </ul>
     </section>
 
@@ -401,9 +434,12 @@
 
   <footer class="footer">
     <div class="wrap">
-      <div class="footer-col">
-        <span class="footer-brand">HELIX</span>
-        <address style="font-style:normal">Faculty of Computer Science<br>AGH University of Krakow, Poland</address>
+      <div class="footer-col footer-id">
+        <a class="footer-agh" href="https://www.agh.edu.pl/en" target="_blank" rel="noopener" aria-label="AGH University of Krakow"><svg class="agh-sign" viewBox="0.0 0.0 818.7 1197.6" aria-hidden="true" focusable="false"><path transform="translate(-21.103195,1238.961853) scale(0.100000,-0.100000)" d="M3530 12381 c0 -5 19 -19 43 -31 250 -131 362 -200 511 -317 91 -72 258 -240 319 -321 59 -78 117 -160 117 -166 0 -2 17 -33 38 -67 148 -248 257 -636 283 -1009 4 -69 8 -2049 9 -4401 0 -3614 2 -4278 14 -4288 9 -8 88 -11 267 -9 l254 3 0 4345 c0 4471 0 4416 -36 4615 -81 446 -248 784 -524 1058 -206 205 -405 329 -745 463 -51 20 -182 58 -285 83 -49 12 -116 29 -147 37 -65 16 -118 18 -118 5zM2730 12352 c0 -6 30 -54 66 -109 196 -289 324 -717 375 -1248 6 -66 16 -156 21 -200 7 -52 12 -1665 14 -4539 3 -3213 8 -4463 15 -4473 14 -15 514 -19 523 -4 11 17 6 8721 -4 8811 -5 47 -14 130 -20 185 -20 190 -89 488 -145 620 -7 17 -16 41 -20 55 -49 162 -255 473 -412 621 -151 142 -413 320 -413 281zM3100 12351 c0 -5 24 -28 53 -51 327 -260 536 -545 701 -955 36 -90 91 -297 122 -455 50 -261 47 -29 53 -4725 3 -2403 10 -4376 14 -4382 11 -18 497 -19 515 -1 15 15 17 8523 2 8733 -9 135 -38 323 -66 435 -38 152 -65 232 -121 358 -13 29 -23 54 -23 57 0 15 -133 233 -180 295 -208 274 -528 507 -885 645 -38 14 -84 33 -102 41 -35 16 -83 19 -83 5zM221 9937 c-18 -22 -10 -7614 8 -7717 46 -268 66 -353 117 -505 211 -636 735 -1080 1474 -1250 223 -51 242 -55 251 -49 9 5 -67 63 -83 64 -4 0 -71 37 -150 81 -489 278 -814 671 -964 1164 -50 164 -71 267 -104 515 -5 37 -10 1713 -10 3860 0 3038 -3 3800 -13 3820 l-13 25 -250 3 c-204 2 -253 0 -263 -11zM1046 9928 c-14 -20 -16 -390 -16 -3728 0 -2175 4 -3769 10 -3860 20 -327 88 -618 204 -873 207 -454 602 -794 1156 -997 144 -52 147 -35 14 70 -499 393 -769 959 -829 1736 -13 176 -15 660 -15 3918 0 2543 -3 3723 -10 3737 -10 18 -24 19 -255 19 -241 0 -244 0 -259 -22zM1868 9939 c-29 -17 -27 -7488 2 -7784 30 -310 73 -508 165 -765 131 -363 417 -706 758 -906 99 -58 100 -48 10 84 -240 350 -374 916 -403 1707 -5 127 -9 1898 -10 3937 0 3356 -1 3708 -16 3722 -19 19 -475 24 -506 5zM6226 9934 c-15 -14 -16 -371 -16 -3782 0 -4091 -1 -4128 -61 -4522 -28 -185 -41 -258 -55 -319 -80 -342 -152 -525 -292 -739 -40 -63 -71 -116 -68 -120 23 -22 300 173 431 303 156 157 329 427 400 625 94 263 133 439 165 734 20 183 20 257 20 3998 0 2824 -3 3814 -11 3824 -18 22 -491 20 -513 -2zM7050 9940 c-13 -8 -16 -451 -21 -3847 -6 -4123 -3 -3928 -54 -4183 -107 -540 -292 -900 -637 -1235 -62 -61 -143 -135 -181 -165 -99 -79 -77 -90 68 -32 28 11 75 30 105 42 298 118 584 322 798 570 233 271 398 729 432 1198 14 194 14 7617 0 7643 -10 18 -24 19 -253 19 -135 0 -249 -4 -257 -10zM7868 9939 c-17 -9 -18 -199 -18 -3742 -1 -2053 -5 -3790 -9 -3862 -56 -854 -463 -1481 -1196 -1839 -65 -32 -120 -72 -108 -79 9 -5 135 20 286 57 654 161 1126 530 1366 1066 85 188 138 385 188 695 17 104 18 320 21 3878 1 2072 -1 3782 -6 3800 l-8 32 -250 2 c-157 2 -255 -1 -266 -8z" fill="currentColor"/></svg></a>
+        <div class="footer-col">
+          <span class="footer-brand">HELIX</span>
+          <address style="font-style:normal">Faculty of Computer Science<br>AGH University of Krakow, Poland</address>
+        </div>
       </div>
       <div class="footer-col">
         <a href="https://github.com/helix-agh" target="_blank" rel="noopener">GitHub</a>

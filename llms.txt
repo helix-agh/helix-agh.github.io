@@ -36,6 +36,5 @@ Partner institutions: Tomas Bata University (Zlín), Czech Technical University 
 - Maciej Smołka, Professor
 - Hubert Guzowski, PhD Student
 - Wojciech Achtelik, PhD Student
-- Bartłomiej Walczak, Master Student
-- Władysław Nieć, Master Student
-- Jerzy Boksa, Master Student
+- Bartłomiej Walczak, PhD Student
+- Władysław Nieć, PhD Student

@@ -114,6 +114,8 @@
       b = b.trim();
       if (!b) return "";
       if (/^@@CB\d+@@$/.test(b)) return codes[+b.replace(/[^\d]/g, "")];
+      var img = b.match(/^!\[([^\]]*)\]\(([^)\s]+)\)$/);
+      if (img) return '<figure class="news-media"><img src="' + esc(img[2]) + '" alt="' + esc(img[1]).replace(/"/g, "&quot;") + '" loading="lazy" decoding="async"></figure>';
       return "<p>" + inline(b).replace(/\n/g, " ") + "</p>";
     }).join("").replace(/@@CB(\d+)@@/g, function (_, i) { return codes[+i]; });
   }
